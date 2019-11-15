@@ -1,5 +1,3 @@
-A counting game
-
 How to play:
 
 	 One may count upto one or two  numbers per turn, and the numbers must be in counting order.
