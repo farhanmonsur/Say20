@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="choose_difficulty" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="say20.ChooseDifficultyController">
+    <Label layoutX="230.0" layoutY="85.0" text="Choose Difficulty">
+        <font>
+            <Font size="19.0" />
+        </font>
+    </Label>
+    <Button layoutX="274.0" layoutY="150.0" mnemonicParsing="false" onAction="#EasyButtonPushed" prefHeight="25.0" prefWidth="51.0" text="Easy" />
+    <Button layoutX="274.0" layoutY="200.0" mnemonicParsing="false" onAction="#HardButtonPushed" prefHeight="25.0" prefWidth="51.0" text="Hard" />
+    <Button layoutX="270.0" layoutY="274.0" mnemonicParsing="false" onAction="#GoBackButtonPushed" text="Go Back" />
+</AnchorPane>
