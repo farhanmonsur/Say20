@@ -20,6 +20,9 @@ public class ResultController implements Initializable {
     private Label answer;
 
     @FXML
+    private Label comment;
+
+    @FXML
     private AnchorPane resultpane;
 
     @FXML
@@ -35,6 +38,9 @@ public class ResultController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         answer.setText(game.answer);
         result.setText(game.result);
+        if (game.mode=='h'){
+            comment.setText(game.comment);
+        }
     }
 
 }

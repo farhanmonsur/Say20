@@ -17,6 +17,7 @@ public class GameplayController implements Initializable {
     public static String answer;
     public static String result;
     public static char mode;
+    public static String comment;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -89,11 +90,13 @@ public class GameplayController implements Initializable {
         if (user==19) {
             answer= "My Answer: 20";
             result= "I WIN!!!";
+            random_comment();
             result();
         }
         if (user==20) {
             answer= "";
             result= "YOU WIN!!!";
+            comment="Good Girl!";
             result();
         }
         if (user==21) {
@@ -104,6 +107,7 @@ public class GameplayController implements Initializable {
         if(pc==20) {
             answer= "My Answer: 20";
             result= "I WIN!!!";
+            random_comment();
             result();
         }
     }
@@ -124,6 +128,19 @@ public class GameplayController implements Initializable {
         int[] pc_answers = {user + 1, user + 2};
         pc = pc_answers[random_choice];
     } // generates a random answer for pc
+
+    private void random_comment(){
+        int random_choice = faru.nextInt(7);
+        String []comments={
+                "Go cry to momma!",
+                "Try tomorrow",
+                "Bad day?",
+                "Brains aren't everything. In your case they're nothing!",
+                "No I'm not insulting you, I'm describing you!",
+                "Roses are red violets are blue, Faru made me genius, what happened to you?",
+                "You suck more than Justin Bieber with a Mic!"};
+        comment=comments[random_choice];
+    }
 
     private void trap(int user, int pc){
         if (user==pc+2){

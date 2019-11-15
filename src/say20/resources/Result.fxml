@@ -18,5 +18,6 @@
             </font>
         </Label>
         <Button layoutX="262.0" layoutY="279.0" mnemonicParsing="false" onAction="#GoBackButtonPushed" text="Main Menu" />
+      <Label fx:id="comment" alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="56.0" prefHeight="25.0" prefWidth="420.0" textAlignment="CENTER" textFill="RED" />
     </children>
 </AnchorPane>
